@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="G:\Python-Projects\userportal"
+VIRTUAL_ENV="G:\Python-Projects\FastAPI-User_Portal\user_portal"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -54,7 +54,7 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
-    PS1="(userportal) ${PS1:-}"
+    PS1="(user_portal) ${PS1:-}"
     export PS1
 fi
 
