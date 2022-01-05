@@ -1,0 +1,9 @@
+.env
+venv
+__pycache__
+Include
+.pytest_cache
+.idea
+Lib
+pyvenv.cfg
+
