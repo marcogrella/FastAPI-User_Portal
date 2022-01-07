@@ -3,9 +3,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routers import user
 
 
+
 app = FastAPI()
 
 origins = ["*"]
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -15,9 +17,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 app.include_router(user.router)
+
+# utilizamos o alembic para gerenciar a criação das tabelas:
+
+# models.Base.metadata.create_all(bind=engine)
+
 
 @app.get("/")
 def root():
     return {"message": "FastAPI api is working"}
-# heroku deployment
+
+
+
+
+
+
